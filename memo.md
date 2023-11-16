@@ -4,6 +4,10 @@ https://zenn.dev/dani_rk/articles/4369b5d3a19629
 
 
 https://zenn.dev/ryo7/articles/create-mysql-on-docker
+mysqlはこれを
+
+pirsma
+https://zenn.dev/yamo/articles/prisma-express-rest-api
 
 ## 初期コマンド
 ### next構築
@@ -19,6 +23,21 @@ touch index.ts
 
 package.jsonのscriptに追記
 "dev": "ts-node-dev index.ts
+
+### prisma
+cd backend/app
+npm install prisma --save-dev
+コンテナ再起動
+docker exec -it express-container /bin/sh -c "npx prisma init --datasource-provider mysql" 
+.env修正
+todoモデル作成
+docker exec -it express-container /bin/sh -c "npx prisma migrate dev --name init"
+コンテナ間のポート
+https://qiita.com/YuitoSato/items/4a4b46f5670b45739a37
+
+
+
+
 
 
 
@@ -172,3 +191,20 @@ Created a new tsconfig.json with:
 
 
 You can learn more at https://aka.ms/tsconfig
+
+
+
+ryotonegawa@trmac 016_next-02_msEngineer-todo % docker exec -it express-container /bin/sh -c "npx prisma init --datasource-provider mysql" 
+
+✔ Your Prisma schema was created at prisma/schema.prisma
+  You can now open it in your favorite editor.
+
+warn You already have a .gitignore file. Don't forget to add `.env` in it to not commit any private information.
+
+Next steps:
+1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+2. Run prisma db pull to turn your database schema into a Prisma schema.
+3. Run prisma generate to generate the Prisma Client. You can then start querying your database.
+
+More information in our documentation:
+https://pris.ly/d/getting-started

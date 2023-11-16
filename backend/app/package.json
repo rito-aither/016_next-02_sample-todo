@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev index.ts"
+    "dev": "ts-node-dev index.ts > log.txt"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@prisma/client": "^5.6.0",
+    "express": "^4.18.2",
+    "prisma": "^5.6.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
