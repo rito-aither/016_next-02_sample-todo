@@ -15,13 +15,8 @@ type todoStatus = 'todo' | 'doing' | 'done'
 const TodoApp: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([])
     const [newTodo, setNewTodo] = useState('')
-    // const axiosInstance = axios.create({
-    //   baseURL: "http://express-container:3001",
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     "Access-Control-Allow-Origin": "*",
-    //   },
-    // })
+
+
     useEffect(() => {
         fetchTodos()
     }, [])
