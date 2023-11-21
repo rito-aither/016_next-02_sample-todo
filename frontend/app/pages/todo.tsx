@@ -71,8 +71,9 @@ const TodoApp: React.FC = () => {
                 status: todos[index].status,
                 is_delete: todos[index].is_delete,
             })
-            todos[index] = response.data
-            setTodos([...todos])
+            const newTodos = [...todos]
+            newTodos[index] = response.data
+            setTodos([...newTodos])
             setNewTodo('')
         } catch (error) {
             console.error('Error ChangeStatus todo:', error)
