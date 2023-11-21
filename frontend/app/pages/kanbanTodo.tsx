@@ -65,9 +65,9 @@ const KanbanTodoApp: React.FC = () => {
         }
     }
     return (
-        <div>
+        <div className=''>
             <div className ="h-10 mt-10 mb-10 ml-1 mr-5">
-                <input className='ml-5 mr-5'
+                <input className='ml-5 mr-5 text-black'
                     type="text"
                     value={newTodo}
                     onChange={(e) => setNewTodo(e.target.value)}
@@ -83,7 +83,7 @@ const KanbanTodoApp: React.FC = () => {
                             .map((todo, index) => (
                                 <li key={todo.id}>
                                     {todo.todo}
-                                    <button
+                                    <button className='bg-orange-300 ml-5'
                                         onClick={() =>
                                             handleUpdateTodo(
                                                 index,
@@ -106,7 +106,7 @@ const KanbanTodoApp: React.FC = () => {
                             .map((todo, index) => (
                                 <li key={todo.id}>
                                     {todo.todo}
-                                    <button
+                                    <button className='bg-orange-300 ml-5'
                                         onClick={() =>
                                             handleUpdateTodo(
                                                 index,
