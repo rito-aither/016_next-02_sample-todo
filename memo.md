@@ -36,6 +36,8 @@ docker exec -it express-container /bin/sh -c "npx prisma migrate dev --name init
 https://qiita.com/YuitoSato/items/4a4b46f5670b45739a37
 
 
+### tailwindcss
+https://qiita.com/P-man_Brown/items/6e9e1f18453a39bda4de
 
 ## memo
 next.jsでcrosエラー
