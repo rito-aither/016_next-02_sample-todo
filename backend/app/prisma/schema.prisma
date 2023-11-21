@@ -10,9 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
- model Todo {
+ model todo {
    id    Int     @id @default(autoincrement())
    todo  String
-   status String
+   status String // todo || doing | done
    is_delete Boolean
  }

@@ -8,13 +8,13 @@ GET /todos
 ```json
 [
   {
-    "id": 1,
-    "title": "ToDoアイテム1",
+    "id ": 1,
+    "todo": "ToDoアイテム1",
     "is_delete": false
   },
   {
-    "id": 2,
-    "title": "ToDoアイテム2",
+    "id ": 2,
+    "todo": "ToDoアイテム2",
     "is_delete": true
   },
   // 他のToDoアイテム
@@ -28,9 +28,9 @@ GET /todos/{id}
 ### レスポンス
 ```json
 {
-  "id": 1,
-  "title": "ToDoアイテム1",
-  "completed": false
+  "id ": 1,
+  "todo": "ToDoアイテム1",
+  "is_delete": false
 }
 ``` 
 ## ToDoアイテム作成
@@ -39,15 +39,15 @@ POST /todos
 ### リクエストボディ
 ```json
 {
-  "title": "新しいToDoアイテム"
+  "todo": "新しいToDoアイテム"
 }
 ``` 
 ### レスポンス
 ``` json
 {
-  "id": 3,
-  "title": "新しいToDoアイテム",
-  "completed": false
+  "id ": 3,
+  "todo": "新しいToDoアイテム",
+  "is_delete": false
 }
 ```
 ### ToDoアイテム更新
@@ -56,17 +56,17 @@ PUT /todos/{id}
 ### リクエストボディ
 ``` json
 {
-  "title": "更新されたToDoアイテム",
-  "completed": true
+  "todo": "更新されたToDoアイテム",
+  "is_delete": true
 }
 ``` 
 ### レスポンス
 ```json
 
 {
-  "id": 3,
-  "title": "更新されたToDoアイテム",
-  "completed": true
+  "id ": 3,
+  "todo": "更新されたToDoアイテム",
+  "is_delete": true
 }
 ``` 
 ## ToDoアイテム削除
