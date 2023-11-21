@@ -19,3 +19,10 @@ docker exec -it express-container /bin/sh -c "npx prisma studio"
 ## 初期構築
 docker-compose up -d --build
 以降はコンテナを起動と停止してください
+
+
+| 環境 | url | コンテナ
+| --- | --- | --- |
+| next.js | localhost:3000 | next-container|
+| express |localhost:3001  | express-container|
+| mysql | localhost:3306 | mysql-container|
