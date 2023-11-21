@@ -37,7 +37,9 @@ https://qiita.com/YuitoSato/items/4a4b46f5670b45739a37
 
 
 
-
+## memo
+next.jsでcrosエラー
+https://dev.to/kaede_io/next-ji-chu-part-02-axios-de-api-wokou-keruyounisuru-59ae
 
 
 
