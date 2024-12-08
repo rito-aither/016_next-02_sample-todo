@@ -2,7 +2,6 @@
 https://zenn.dev/dani_rk/articles/4369b5d3a19629
 ベース,nextはnodeのバージョンを20にした
 
-
 https://zenn.dev/ryo7/articles/create-mysql-on-docker
 mysqlはこれを
 
@@ -38,6 +37,7 @@ https://qiita.com/YuitoSato/items/4a4b46f5670b45739a37
 
 ### tailwindcss
 https://qiita.com/P-man_Brown/items/6e9e1f18453a39bda4de
+https://nerdcave.com/tailwind-cheat-sheet
 
 ## memo
 next.jsでcrosエラー
@@ -47,7 +47,9 @@ https://dev.to/kaede_io/next-ji-chu-part-02-axios-de-api-wokou-keruyounisuru-59a
 
 
 ### 履歴
-ryotonegawa@trmac 016_next-02_msEngineer-todo % cd frontend && npx create-next-app app --ts 
+
+```
+trmac 016_next-02_msEngineer-todo % cd frontend && npx create-next-app app --ts 
 Need to install the following packages:
   create-next-app@14.0.2
 Ok to proceed? (y) y
@@ -61,7 +63,7 @@ npm WARN EBADENGINE }
 ✔ Would you like to use `src/` directory? … No / Yes
 ✔ Would you like to use App Router? (recommended) … No / Yes
 ✔ Would you like to customize the default import alias (@/*)? … No / Yes
-Creating a new Next.js app in /Users/ryotonegawa/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app.
+Creating a new Next.js app in /Users/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app.
 
 Using npm.
 
@@ -98,7 +100,7 @@ added 331 packages, and audited 332 packages in 29s
 found 0 vulnerabilities
 Initialized a git repository.
 
-Success! Created app at /Users/ryotonegawa/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app
+Success! Created app at /Users/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app
 
 
 
@@ -122,13 +124,13 @@ added 331 packages, and audited 332 packages in 29s
 found 0 vulnerabilities
 Initialized a git repository.
 
-Success! Created app at /Users/ryotonegawa/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app
+Success! Created app at /Users/repository/my/016_next/016_next-02_msEngineer-todo/frontend/app
 
 
 
 
 
-ryotonegawa@trmac 016_next-02_msEngineer-todo % cd backend
+trmac 016_next-02_msEngineer-todo % cd backend
 npm init
 npm install express
 npm install -D typescript @types/node ts-node @types/express
@@ -153,7 +155,7 @@ git repository:
 keywords: 
 author: 
 license: (ISC) 
-About to write to /Users/ryotonegawa/repository/my/016_next/016_next-02_msEngineer-todo/backend/package.json:
+About to write to /Users/repository/my/016_next/016_next-02_msEngineer-todo/backend/package.json:
 
 {
   "name": "backend",
@@ -197,8 +199,7 @@ Created a new tsconfig.json with:
 You can learn more at https://aka.ms/tsconfig
 
 
-
-ryotonegawa@trmac 016_next-02_msEngineer-todo % docker exec -it express-container /bin/sh -c "npx prisma init --datasource-provider mysql" 
+@trmac 016_next-02_msEngineer-todo % docker exec -it express-container /bin/sh -c "npx prisma init --datasource-provider mysql" 
 
 ✔ Your Prisma schema was created at prisma/schema.prisma
   You can now open it in your favorite editor.
@@ -212,3 +213,5 @@ Next steps:
 
 More information in our documentation:
 https://pris.ly/d/getting-started
+
+```
